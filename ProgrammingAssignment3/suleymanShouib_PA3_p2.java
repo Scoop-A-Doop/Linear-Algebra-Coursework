@@ -137,7 +137,6 @@ public class suleymanShouib_PA3_p2 {
 		eigenValue2 = ((quadraticB*-1) - Math.sqrt(Math.pow(quadraticB, 2) - 4*quadraticA*quadraticC))/(2*quadraticA);
 	}
 	
-
 	static String FOIL(int i, int j) {
 		String first = "";
 		String outter = "";
@@ -159,8 +158,6 @@ public class suleymanShouib_PA3_p2 {
 		
 		return first+" "+outterInner+" "+last;
 	}
-	
-	//Part B
 	//Part A ends
 	
 	//Part B begins
@@ -202,11 +199,9 @@ public class suleymanShouib_PA3_p2 {
 		
 		return normalizedEigenVector;
 	}
-	
 	//Part B ends
 	
 	//Part C Begins
-
 	static double[][] matrixComposition(double[][]Lambda, double[][]R) {
 		//First find the tranpose of R
 		double[][] RTranspose = new double[2][2];
@@ -243,10 +238,6 @@ public class suleymanShouib_PA3_p2 {
 		return 0;
 	}
 	
-	
-	
-	
-	
 	// This method reads through any given file and takes out only the needed numbers and places it into the appropriate matrix
 	static void readFile(String fileName, String[][] MatrixA) {
 		try {
@@ -266,8 +257,6 @@ public class suleymanShouib_PA3_p2 {
 		}
 	}
 	
-	
-		
 	//Prints out the matrix
 	static void print(double[][] Matrix) {
 		for(int i = 0; i < Matrix.length; i++) {
@@ -278,6 +267,5 @@ public class suleymanShouib_PA3_p2 {
 		}
 		System.out.println();
 	}
-	
 
 }
