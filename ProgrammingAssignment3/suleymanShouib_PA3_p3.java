@@ -111,9 +111,10 @@ public class suleymanShouib_PA3_p3 {
 			double a = (pointX2-pointX1);
 			double b = (pointY2-pointY1);
 			double c = (pointZ2-pointZ1);
+			double d = -((a*pointX2)+(b*pointY2)+(b*pointZ2));
 			
 			//This is the distance equation |ax+by+cz| / (a^2+b^2+c^2)^(1/2)
-			double distance = (Math.abs((a*point3X)+(b*point3Y)+(c*point3Z))) / (Math.sqrt(Math.pow(a, 2)+Math.pow(b, 2)+Math.pow(c, 2)));
+			double distance = (Math.abs((a*point3X)+(b*point3Y)+(c*point3Z))+d) / (Math.sqrt(Math.pow(a, 2)+Math.pow(b, 2)+Math.pow(c, 2)));
 			
 			return Double.valueOf(df.format(distance));
 		}
