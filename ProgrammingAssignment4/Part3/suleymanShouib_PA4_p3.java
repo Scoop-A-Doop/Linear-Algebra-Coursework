@@ -175,7 +175,7 @@ public class suleymanShouib_PA4_p3 {
 		double columnSum = 0;
 		for(int i = 0; i < googleMatrix.length; i++) {
 			for(int j = 0; j < googleMatrix.length; j++) {
-				columnSum += googleMatrix[i][j];	
+				columnSum += googleMatrix[j][i];	
 			}
 			if(columnSum > 0.98 && columnSum < 1.1) {
 				columnSum = 0;
